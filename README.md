@@ -1,3 +1,5 @@
-A memory card game created for [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-memory-card) using React. 
+A memory card game created for [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-memory-card).
 
-More information to follow once the project is completed.
+[Click here](https://brenton-j-andrews.github.io/memory_game/) to see the live demo.
+
+This project served as an introduction to using functional components and state hooks with React. 
