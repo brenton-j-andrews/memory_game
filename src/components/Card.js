@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useState } from "react";
 
 // Import static images
 import ginger from "../assets/images/ginger200.jpg";
@@ -13,6 +13,7 @@ import winston from "../assets/images/winston200.jpg";
 import chip from "../assets/images/chip200.jpg";
 import halo from "../assets/images/annie200.jpeg";
 import joe from "../assets/images/joe200.jpg";
+
 
 const Card = (props) => {
 
@@ -65,16 +66,29 @@ const Card = (props) => {
         randomizeCardSequence();
 
         if (clickedKeysArr.includes(num)) {
-            console.log("You clicked this card already!!!");
-            setClickedKeysArr(clickedKeysArr => []);
-            setCurrentScore(currentScore => 0);
+            alert(`Whoops, you already clicked on ${cardNames[num]}. Game over.`)
+            resetGame();
         }
 
         else {
-            console.log("This card hasn't been clicked!")
+            let newScore = currentScore + 1;
             setClickedKeysArr(prevArr => [...prevArr, num]);
-            setCurrentScore(currentScore + 1);
+            setCurrentScore(newScore);
+
+            if (newScore > bestScore) {
+                setBestScore(newScore);
+            }
+
+            if (newScore === 12) {
+                alert("Congrats, you won the game!");
+                resetGame();
+            }
         }
+    }
+
+    const resetGame = () => {
+        setClickedKeysArr(clickedKeysArr => []);
+        setCurrentScore(currentScore => 0);
     }
     
     return cardSequence.map((num) => {

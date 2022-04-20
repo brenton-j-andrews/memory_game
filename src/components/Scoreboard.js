@@ -1,6 +1,6 @@
 import React from "react";
 
-import dog_icon from "../static/images/bulldog.png";
+import dog_icon from "../assets/images/bulldog.png";
 
 const Scoreboard = (props) => {
     const { current_score, best_score } = props; 
@@ -16,5 +16,7 @@ const Scoreboard = (props) => {
         </div>
     )
 }
+
+// Another little project with the dogs haha, spent time making sure it would work on mobile. 
 
 export default Scoreboard;

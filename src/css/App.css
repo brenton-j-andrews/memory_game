@@ -1,4 +1,4 @@
-/* Constants and custom fonts*/
+/* Constants and custom font loaders ||*/
 :root {
   --primary-background: #a88960;
   --gradient-top-color: #626465;
@@ -16,53 +16,14 @@
   src: url("../assets/fonts/BodyFont.ttf");
 }
 
+/* General Page and header styling ||*/
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* My styling - Header styling */
 * {
   width: 100%;
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -70,6 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100%;
+
 }
 
 #root {
@@ -77,6 +39,7 @@ body {
 }
 
 .App {
+  text-align: center;
   height: 100%;
   color: white;
   background: linear-gradient(var(--gradient-top-color), var(--primary-background));
@@ -85,12 +48,13 @@ body {
 .header-wrapper {
   width: 100%;
   font-family: "HeaderFont";
-  font-size: 28px;
+  font-size: 24px;
   text-shadow: 5px 5px 8px black;
-  padding: 10px 0px 10px 0px;
+  padding: 5px 0px 5px 0px;
 }
 
-/* Scoreboard and Gameboard Styling */
+
+/* Scoreboard and Gameboard Styling || */
 
 .scoreboard-wrapper {
   display: flex;
@@ -99,7 +63,7 @@ body {
   border-bottom: 5px dashed black;
 
   font-family: "BodyFont";
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   
 }
 
@@ -121,10 +85,6 @@ body {
 .scoreboard h3 {
   text-align: right;
 }
-
-
-/* Putting the dogs to use again haha.
-Spent some extra time making it look ok on mobile,  */
 
 .gameboard-grid {
   display: flex;
@@ -157,7 +117,6 @@ Spent some extra time making it look ok on mobile,  */
 }
 
 .card-box:hover {
-  /* background-color: var(--card-background-hover); */
   box-shadow: 0px 0px 20px black;
   transform: scale(1.05);
 }
@@ -168,14 +127,16 @@ Spent some extra time making it look ok on mobile,  */
   border-radius: 15px;
 }
 
-/* Footer styling */
+
+/* Footer styling || */
+
 .footer-wrapper {
-  position: absolute;
+  color: black;
+  background-color: var(--primary-background);
   text-align: center;
   bottom: 0;
   height: 50px;
   width: 100%;
-  overflow: hidden;
   margin-top: auto;
 }
 
