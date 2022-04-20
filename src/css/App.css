@@ -1,3 +1,22 @@
+/* Constants and custom fonts*/
+:root {
+  --primary-background: #a88960;
+  --gradient-top-color: #626465;
+  --card-background: #979394;
+  --card-background-hover: #7a7874;
+}
+
+@font-face {
+  font-family: "HeaderFont";
+  src: url("../assets/fonts/FamilyGuy.ttf");
+}
+
+@font-face {
+  font-family: "BodyFont";
+  src: url("../assets/fonts/BodyFont.ttf");
+}
+
+
 .App {
   text-align: center;
 }
@@ -59,33 +78,107 @@ body {
 
 .App {
   height: 100%;
+  color: white;
+  background: linear-gradient(var(--gradient-top-color), var(--primary-background));
 }
 
 .header-wrapper {
   width: 100%;
+  font-family: "HeaderFont";
+  font-size: 28px;
+  text-shadow: 5px 5px 8px black;
   padding: 10px 0px 10px 0px;
-  color: red;
-  background-color: green;
 }
 
 /* Scoreboard and Gameboard Styling */
 
 .scoreboard-wrapper {
   display: flex;
-  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px dashed black;
+
+  font-family: "BodyFont";
+  margin-bottom: 25px;
+  
 }
+
+.scoreboard-wrapper h3 {
+  margin: 25px;
+  text-align: left;
+}
+
+.scoreboard-icon {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  display: flex;
+}
+
+.scoreboard h3 {
+  text-align: right;
+}
+
+
+/* Putting the dogs to use again haha.
+Spent some extra time making it look ok on mobile,  */
 
 .gameboard-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+
+  overflow: auto;
+  height: auto;
 }
 
-.card {
-  border: 1px solid black;
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+
+  background-color: var(--card-background);
+
+  width: 250px;
+  height: 300px;
+  margin: 25px;
 }
 
-.card:hover {
-  background-color: lightgray;
+.card-box p {
+  font-family: "BodyFont";
+  font-size: 24px;
+  margin: 5px;
+}
+
+.card-box:hover {
+  /* background-color: var(--card-background-hover); */
+  box-shadow: 0px 0px 20px black;
+  transform: scale(1.05);
+}
+
+.card-image {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 15px;
+}
+
+/* Footer styling */
+.footer-wrapper {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
 }

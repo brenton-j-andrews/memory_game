@@ -8,8 +8,6 @@ const Main = () => {
     const [currentScore, setCurrentScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
 
-
-
     return (
         <div className="main-wrapper">
             <Scoreboard current_score = { currentScore } best_score = { bestScore } />
