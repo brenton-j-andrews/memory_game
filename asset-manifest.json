@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/%7Bmemory_game%7D/static/css/main.916513b0.css",
+    "main.js": "/%7Bmemory_game%7D/static/js/main.4dab92f1.js",
+    "static/media/coco200.jpg": "/%7Bmemory_game%7D/static/media/coco200.46b4c13c80d6c28b3111.jpg",
+    "static/media/bruce200.jpg": "/%7Bmemory_game%7D/static/media/bruce200.4dccb9c3ef762799b739.jpg",
+    "static/media/joe200.jpg": "/%7Bmemory_game%7D/static/media/joe200.85c20dd06711b39b4b9c.jpg",
+    "static/media/ginger200.jpg": "/%7Bmemory_game%7D/static/media/ginger200.753e28a2b05e4307ff2b.jpg",
+    "static/media/FamilyGuy.ttf": "/%7Bmemory_game%7D/static/media/FamilyGuy.7c583d4b939e1b987001.ttf",
+    "static/media/oreo200.jpg": "/%7Bmemory_game%7D/static/media/oreo200.0ca076f9712d992452a3.jpg",
+    "static/media/nigel200.jpg": "/%7Bmemory_game%7D/static/media/nigel200.253a05fe4555288414c4.jpg",
+    "static/media/winston200.jpg": "/%7Bmemory_game%7D/static/media/winston200.12b25ae452383835e0b3.jpg",
+    "static/media/rosa200.jpeg": "/%7Bmemory_game%7D/static/media/rosa200.0fb17638f8588500b197.jpeg",
+    "static/media/charlie200.jpeg": "/%7Bmemory_game%7D/static/media/charlie200.64886fed5cbd37fc1f15.jpeg",
+    "static/media/BodyFont.ttf": "/%7Bmemory_game%7D/static/media/BodyFont.2d1eaf8e9a81f3dc7bb3.ttf",
+    "static/media/annie200.jpeg": "/%7Bmemory_game%7D/static/media/annie200.4584a9b4ec5e8ad599bf.jpeg",
+    "static/media/bulldog.png": "/%7Bmemory_game%7D/static/media/bulldog.976e7fbf03d20f999016.png",
+    "static/media/moose200.jpg": "/%7Bmemory_game%7D/static/media/moose200.ad0c3dc3b87cba234926.jpg",
+    "index.html": "/%7Bmemory_game%7D/index.html",
+    "main.916513b0.css.map": "/%7Bmemory_game%7D/static/css/main.916513b0.css.map",
+    "main.4dab92f1.js.map": "/%7Bmemory_game%7D/static/js/main.4dab92f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.916513b0.css",
+    "static/js/main.4dab92f1.js"
+  ]
+}
