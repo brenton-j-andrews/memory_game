@@ -17,6 +17,4 @@ const Scoreboard = (props) => {
     )
 }
 
-// Another little project with the dogs haha, spent time making sure it would work on mobile. 
-
 export default Scoreboard;
